@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/Julia-slvbrg/eternal-sunshine-of-a-spotless-mind-landing-page/issues"
   },
-  "homepage": "https://github.com/Julia-slvbrg/eternal-sunshine-of-a-spotless-mind-landing-page#readme"
+  "homepage": "https://github.com/Julia-slvbrg/eternal-sunshine-of-a-spotless-mind-landing-page#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.74.1"
+  }
 }
