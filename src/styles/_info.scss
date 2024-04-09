@@ -1,0 +1,27 @@
+@use 'variables';
+
+.info{
+    padding: 4.0vw;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    &__details__list, &__genres__list{
+        &__item{
+            list-style-type: none;
+            display: inline-block;
+            padding: 8px 12px;
+            font-weight: 600;
+        }
+    }
+
+    &__genres__list{
+        &__item{
+            border: .5px solid variables.$secondaryTextColor;
+            border-radius: 75px;
+            letter-spacing: 2px;
+            margin: 0 2px;
+        }
+    }
+}
