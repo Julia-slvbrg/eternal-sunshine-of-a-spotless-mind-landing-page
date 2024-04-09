@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'hero';
+@use 'info';
 
 *{
     padding: 0;
@@ -19,14 +20,14 @@
     font-weight: 500;
 }
 
-@mixin text($fontSize: 16px, $color: variables.$textColor, $fontFamily: Barlow){
+@mixin text($fontSize: 16px, $color: variables.$ternaryTextColor, $fontFamily: Barlow){
     font-size: $fontSize;
     line-height: $fontSize + 10px;
     color: $color;
     font-family: $fontFamily;
 }
 
-@mixin title($fontSize: 40px, $color: variables.$primaryTextColor, $fontFamily: Fire Sans){
+@mixin title($fontSize: 30px, $color: variables.$primaryTextColor, $fontFamily: Fire Sans){
     @include text($fontSize, $color, $fontFamily);
 }
 
@@ -34,15 +35,24 @@ body{
     background-color: variables.$bgColor;
 }
 
+.title--bg{
+    @include title(40px)
+}
+
 .title{
-    @include title()
+    @include title;
+    margin-bottom: 32px;
+}
+
+.text--bg{
+    @include text(24px)
+}
+
+.text{
+    @include text(20px)
 }
 
 .text--sm{
     @include text(18px)
-}
-
-.text{
-    @include text(24px)
 }
 
