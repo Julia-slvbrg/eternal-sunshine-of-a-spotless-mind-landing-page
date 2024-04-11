@@ -1,0 +1,54 @@
+@use 'variables';
+
+.cast{
+    padding: 4vw;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 24px;
+
+        &__item{
+            &__image{
+                width: 250px;
+                height: 290px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+
+        &__tabs{
+            display: none;
+
+            &__button{
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid variables.$ternaryTextColor;
+
+            }
+
+            &--is-open{
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+
+        &__about{
+            display: none;
+
+            &--is-open{
+                display: block;
+            }
+        }
+
+        .first-row{
+            grid-column: span 3;
+            background-color: red;
+        }
+    }
+    
+}
