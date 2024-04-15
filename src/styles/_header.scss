@@ -1,0 +1,39 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: linear-gradient(0deg, transparent 15%, #181b31 100%);
+
+    &__logo{
+        max-width: 85px;
+        width: 100%;
+    
+        &--is-sticky{
+            position: fixed;
+            top: 85vh;
+            left: 4vw;
+        }
+    }
+    
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+       
+        &__links{
+            list-style-type: none;
+            display: flex;
+
+            &__item{
+                margin: 8px;
+            }
+        }
+    }
+
+    &__button{
+        text-decoration: none;
+    }
+}
