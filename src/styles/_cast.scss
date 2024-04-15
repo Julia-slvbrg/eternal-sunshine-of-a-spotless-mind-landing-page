@@ -18,17 +18,27 @@
                 height: 290px;
                 border-radius: 5px;
                 cursor: pointer;
+                
+                &:hover{
+                    -webkit-filter: brightness(1.2);
+                    transition: all aese .5s;
+                }                
             }
         }
 
         &__tabs{
             display: none;
+           
 
             &__button{
                 background-color: transparent;
                 border: none;
-                border-bottom: 1px solid variables.$ternaryTextColor;
-
+                border-bottom: 1px solid transparent;
+                cursor: pointer;
+                
+                &--is-active{
+                    border-bottom: 2px solid variables.$ternaryTextColor;
+                }
             }
 
             &--is-open{
@@ -40,14 +50,20 @@
         &__about{
             display: none;
 
+            &__item{
+                display: none;
+
+                &--is-active{
+                    display: block;
+                }
+            }
             &--is-open{
                 display: block;
             }
         }
 
-        .first-row{
+        .first-row, .second-row{
             grid-column: span 3;
-            background-color: red;
         }
     }
     

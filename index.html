@@ -54,61 +54,93 @@
             <div class="cast__container__item">
                 <img src="./dist/images/cast/joel.png" data-bio-image="Jim_Joel" class="cast__container__item__image" alt="Jim Carey as Joel Barish">
                 <nav class="cast__container__tabs" >
-                    <button class="text--sm cast__container__tabs__button">Jim Carrey</button>
-                    <button class="text--sm cast__container__tabs__button">Joel</button>
+                    <button class="text--sm cast__container__tabs__button cast__container__tabs__button--is-active" data-tab-button="Jim">Jim Carrey</button>
+                    <button class="text--sm cast__container__tabs__button" data-tab-button="Joel">Joel</button>
                 </nav>
                 
             </div>
             <div class="cast__container__item">
                 <img src="./dist/images/cast/clementine.png" data-bio-image="Kate_Clementine" class="cast__container__item__image" alt="Kate Winslet as Clementine Kruczynski">
                 <nav class="cast__container__tabs" >
-                    <button class="text--sm cast__container__tabs__button">Kate Winslet</button>
-                    <button class="text--sm cast__container__tabs__button">Clementine</button>
+                    <button class="text--sm cast__container__tabs__button cast__container__tabs__button--is-active" data-tab-button="Kate">Kate Winslet</button>
+                    <button class="text--sm cast__container__tabs__button" data-tab-button="Clementine">Clementine</button>
                 </nav>
             </div>
             <div class="cast__container__item">
                 <img src="./dist/images/cast/kirsten-dunst.png" data-bio-image="Kirsten_Mary" class="cast__container__item__image" alt="Kirsten Dunst as Mary">
                 <nav class="cast__container__tabs" >
-                    <button class="text--sm cast__container__tabs__button">Kirsten Dunst</button>
-                    <button class="text--sm cast__container__tabs__button">Mary</button>
+                    <button class="text--sm cast__container__tabs__button cast__container__tabs__button--is-active" data-tab-button="Kirsten">Kirsten Dunst</button>
+                    <button class="text--sm cast__container__tabs__button" data-tab-button="Mary">Mary</button>
                 </nav>
             </div>
-            <div class="cast__container__about first-row" data-bio-text="Jim_Joel">
-                <p>
+            <div class="text--sm cast__container__about first-row" data-bio-text="Jim_Joel">
+                <p class="cast__container__about__item cast__container__about__item--is-active" data-tab-id="Jim">
                     Jim Carrey, Canadian-born and a U.S. citizen since 2004, is an actor and producer famous for his rubbery body movements and flexible facial expressions. The two-time Golden Globe-winner rose to fame as a cast member of the Fox sketch comedy In Living Color (1990) but leading roles in Ace Ventura: Pet Detective (1994), Dumb and Dumber (1994) and The Mask (1994) established him as a bankable comedy actor.
                 </p>
-                <p>
+                <p class="cast__container__about__item" data-tab-id="Joel">
                     He lived a solitary and unhappy life until he met Clementine Kruczynski, who fulfilled his emotional needs. They became very close and their bond was special. However, when their relationship ended two years later, Joel was deeply upset and struggled to move on. After he learned that Clementine had undergone a procedure to erase their memories of each other, he began to consider ways to try and forget her.
                 </p>
             </div>
-            <div class="cast__container__about first-row" data-bio-text="Kate_Clementine">
-                <p>
+            <div class="text--sm cast__container__about first-row" data-bio-text="Kate_Clementine">
+                <p class="cast__container__about__item cast__container__about__item--is-active" data-tab-id="Kate">
                     Ask Kate Winslet what she likes about any of her characters, and the word "ballsy" is bound to pop up at least once. The British actress has made a point of eschewing straightforward pretty-girl parts in favor of more devilish damsels; as a result, she's built an eclectic resume that runs the gamut from Shakespearean tragedy to modern-day mysticism and erotica.
                 </p>
-                <p>
+                <p class="cast__container__about__item" data-tab-id="Clementine">
                     Clementine Kruczynski is a free-spirited young woman living in a great and cheap apartment in New York City for the past four years. She works as a bookstore clerk and is known for her constantly changing hair color, with orange hair with blue streaks being her current style. Clementine's interests include drinking, traveling, light crime, and anything else that appeals to her at the moment. Despite her carefree and impulsive nature, she values simple things in life such as good music and books, and enjoys taking trips to lie on her back on a frozen river.
+                </p>
+            </div>
+            <div class="text--sm cast__container__about first-row" data-bio-text="Kirsten_Mary">
+                <p class="cast__container__about__item cast__container__about__item--is-active" data-tab-id="Kirsten">
+                    Kirsten Caroline Dunst is an American actress, who also holds German citizenship. She was born on April 30, 1982 in Point Pleasant, New Jersey, to parents Inez (née Rupprecht), who owned an art gallery, and Klaus Dunst, a medical services executive. She has a younger brother named Christian Dunst, born in 1987. Her father is German, from Hamburg, and her mother, who is American, is of German and Swedish descent.
+                </p>
+                <p class="cast__container__about__item" data-tab-id="Mary">
+                    She is the receptionist for Lacuna who, while dating Stan Fink, initially has a crush on Dr. Howard Mierzwiak. While erasing the memory of Joel, Howard's wife catches her kissing Howard. Howard's wife reveals that Mary previously had a relationship with Howard, with Howard being erased from Mary's mind. She quits her job after reacting to this information and mails Lacuna's company records to its customers.
                 </p>
             </div>
             <div class="cast__container__item">
                 <img src="./dist/images/cast/stan.png" data-bio-image="Mark_Stan" class="cast__container__item__image" alt="Mark Ruffalo as Stan">
                 <nav class="cast__container__tabs" >
-                    <button class="text--sm cast__container__tabs__button">Mark Ruffalo</button>
-                    <button class="text--sm cast__container__tabs__button">Stan</button>
+                    <button class="text--sm cast__container__tabs__button cast__container__tabs__button--is-active" data-tab-button="Mark">Mark Ruffalo</button>
+                    <button class="text--sm cast__container__tabs__button" data-tab-button="Stan">Stan</button>
                 </nav>
             </div>
             <div class="cast__container__item">
                 <img src="./dist/images/cast/dr-howard1.png" data-bio-image="Tom_Howard" class="cast__container__item__image" alt="Tom Wilkinson as Dr. Howard Mierzwiak">
                 <nav class="cast__container__tabs" >
-                    <button class="text--sm cast__container__tabs__button">Tom Wilkinson</button>
-                    <button class="text--sm cast__container__tabs__button">Dr. Howard</button>
+                    <button class="text--sm cast__container__tabs__button cast__container__tabs__button--is-active" data-tab-button="Tom">Tom Wilkinson</button>
+                    <button class="text--sm cast__container__tabs__button" data-tab-button="Howard">Dr. Howard</button>
                 </nav>
             </div>
             <div class="cast__container__item">
                 <img src="./dist/images/cast/elijah-wood.png" data-bio-image="Elijah_Patrick" class="cast__container__item__image" alt="Elijah Wood as Patrick">
                 <nav class="cast__container__tabs" >
-                    <button class="text--sm cast__container__tabs__button">Elijah Wood</button>
-                    <button class="text--sm cast__container__tabs__button">Patrick</button>
+                    <button class="text--sm cast__container__tabs__button cast__container__tabs__button--is-active" data-tab-button="Elijah">Elijah Wood</button>
+                    <button class="text--sm cast__container__tabs__button" data-tab-button="Patrick">Patrick</button>
                 </nav>
+            </div>
+            <div class="text--sm cast__container__about second-row" data-bio-text="Mark_Stan">
+                <p class="cast__container__about__item cast__container__about__item--is-active" data-tab-id="Mark">
+                    Award-winning actor Mark Ruffalo was born on November 22, 1967, in Kenosha, Wisconsin, of humble means to father Frank Lawrence Ruffalo, a construction painter and Marie Rose (Hebert), a stylist and hairdresser; his father's ancestry is Italian and his mother is of half French-Canadian and half Italian descent. Mark moved with his family to Virginia Beach, Virginia, where he lived out most of his teenage years. Following high school, Mark moved with his family to San Diego and soon migrated north, eventually settling in Los Angeles.
+                </p>
+                <p class="cast__container__about__item" data-tab-id="Stan">
+                    He is a technician for Lacuna who got into a relationship with Mary Svevo until it was revealed that she was in her previous relationship with Dr. Howard Mierzwiak.
+                </p>
+            </div>
+            <div class="text--sm cast__container__about second-row" data-bio-text="Tom_Howard">
+                <p class="cast__container__about__item cast__container__about__item--is-active" data-tab-id="Tom">
+                    Popular British character actor Tom Wilkinson was born in Leeds, West Yorkshire, England, and came from a long line of urban farmers. He was the son of Marjorie (Percival) and Thomas Wilkinson. Economic hardships forced his family to move to Canada for a few years when Wilkinson was a child; then, after he had returned to England, he attended and graduated from the University of Kent at Canterbury with a degree in English and American Literature.
+                </p>
+                <p class="cast__container__about__item" data-tab-id="Howard">
+                    He is the person who runs Lacuna. In the past, he had an affair with Mary Svevo, which ended with the relationship being destroyed from her mind.
+                </p>
+            </div>
+            <div class="text--sm cast__container__about second-row" data-bio-text="Elijah_Patrick">
+                <p class="cast__container__about__item cast__container__about__item--is-active" data-tab-id="Elijah">
+                    Elijah Wood is an American actor best known for portraying Frodo Baggins in Peter Jackson's blockbuster Lord of the Rings film trilogy. In addition to reprising the role in The Hobbit series, Wood also played Ryan in the FX television comedy Wilfred (2011) and voiced Beck in the Disney XD animated television series Tron: Uprising (2012).
+                </p>
+                <p class="cast__container__about__item" data-tab-id="Patrick">
+                    He is a technician who is working Lacuna. He tries to be in a relationship with Clementine Kruczynski by imitating Joel Barrish. The two eventually break up when Clementine and Joel begin dating for the second time.
+                </p>
             </div>
         </div>
     </section>
