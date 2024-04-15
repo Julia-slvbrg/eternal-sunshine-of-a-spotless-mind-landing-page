@@ -1,6 +1,7 @@
 @use 'variables';
 @use 'hero';
 @use 'info';
+@use 'cast';
 
 *{
     padding: 0;
@@ -40,7 +41,7 @@ body{
 }
 
 .title{
-    @include title;
+    @include title($color: variables.$secondaryTextColor);
     margin-bottom: 32px;
 }
 
@@ -55,4 +56,19 @@ body{
 .text--sm{
     @include text(18px)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
