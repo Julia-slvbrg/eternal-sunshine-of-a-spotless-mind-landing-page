@@ -1,0 +1,22 @@
+.director{
+    padding: 4vw;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &__image{
+            width: 250px;
+        }
+
+        &__bio{
+            width: 600px;
+        }
+    }
+}
