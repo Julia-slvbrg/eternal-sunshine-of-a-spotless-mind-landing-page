@@ -2,6 +2,7 @@
 @use 'hero';
 @use 'info';
 @use 'cast';
+@use 'director';
 
 *{
     padding: 0;
@@ -56,19 +57,3 @@ body{
 .text--sm{
     @include text(18px)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

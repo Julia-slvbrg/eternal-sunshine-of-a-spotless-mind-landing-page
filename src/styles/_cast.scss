@@ -16,19 +16,23 @@
             &__image{
                 width: 250px;
                 height: 290px;
-                border-radius: 5px;
+                border-radius: 7px;
                 cursor: pointer;
+
+                &--is-active{
+                    box-shadow: 1px 1px 35px 1px #bbb9c5;
+                    -webkit-filter: brightness(1.1);
+                }
                 
                 &:hover{
-                    -webkit-filter: brightness(1.2);
-                    transition: all aese .5s;
+                    -webkit-filter: brightness(1.1);
                 }                
             }
         }
 
         &__tabs{
             display: none;
-           
+           margin-top: 3PX;
 
             &__button{
                 background-color: transparent;

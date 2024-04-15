@@ -7,18 +7,24 @@ document.addEventListener('DOMContentLoaded', function(){
         dataBioSelectors[i].addEventListener('click', function(bioSelector){
             const openSelector = 'cast__container__tabs--is-open';
             const bioSelectorTabs = bioSelector.target.nextElementSibling;
+            console.log(bioSelector.target);
 
             if(bioSelectorTabs.classList.contains(openSelector)){
                 hideBioSelector();
                 hideBioText();
+                deactivateImg();
 
             }else{
                 hideBioSelector();
                 hideBioText();
+                deactivateImg();
 
                 if(bioSelector.target.dataset.bioImage === aboutContainers[i].dataset.bioText){
                     bioSelectorTabs.classList.add(openSelector);
+
                     aboutContainers[i].classList.add('cast__container__about--is-open');
+
+                    bioSelector.target.classList.add('cast__container__item__image--is-active')
                 }
             }
         })
@@ -41,6 +47,12 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 });
+
+function deactivateImg(){
+    const imageSelectors = document.querySelectorAll('[data-bio-image]');
+
+    imageSelectors.forEach(image => image.classList.remove('cast__container__item__image--is-active'))
+};
 
 function hideBioSelector(){
     const bioSelectorTabs = document.querySelectorAll('.cast__container__tabs');
