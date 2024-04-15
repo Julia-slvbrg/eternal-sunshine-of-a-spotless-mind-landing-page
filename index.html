@@ -10,9 +10,33 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <a href="#">
+                    <img class="header__logo" src="./dist/images/sticker.png" alt="Clem & Joel sticker">
+                </a>
+                
+            </h1>
+
+            <ul class="header__container__links">
+                <li class="header__container__links__item">
+                    <a href="#sinopsis" class="title--sm header__button" >SINOPSIS</a>
+                    
+                </li>
+                <li class="header__container__links__item">
+                    <a href="#cast" class="title--sm header__button">CAST</a>
+                    
+                </li>
+                <li class="header__container__links__item">
+                    <a href="#director" class="title--sm header__button">DIRECTOR</a>
+                    
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__overlay"></div>
-        
         <div class="hero__content">
             <h1 class="hero__content__title title--bg">ETERNAL SUNSHINE OF A SPOTLESS MIND</h1>
             <div class="hero__content__quotes">
@@ -26,7 +50,7 @@
         </div>
     </section>
 
-    <section class="info">
+    <section class="info" id="sinopsis">
         <h2 class="title">SINOPSIS</h2>
         <p class="text">
             When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories forever. Based on an original screenplay by French director Michel Gondry, American screenwriter Charlie Kaufman, and French artist Pierre Bismuth. 
@@ -48,7 +72,7 @@
         </div>
     </section>
 
-    <section class="cast">
+    <section class="cast" id="cast">
         <h2 class="title">CAST</h2>
         <div class="cast__container">
             <div class="cast__container__item">
@@ -145,7 +169,7 @@
         </div>
     </section>
     <section class="director">
-        <h2 class="title">DIRECTOR</h2>
+        <h2 class="title" id="director">DIRECTOR</h2>
         <div class="director__container">
             <img class="director__container__image" src="./dist/images/director/michael-gondry.png" alt="Michel Gondry">
             <p class="text--sm director__container__bio">

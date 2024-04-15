@@ -2,12 +2,17 @@ document.addEventListener('DOMContentLoaded', function(){
     const dataBioSelectors = document.querySelectorAll('[data-bio-image]');
     const aboutContainers = document.querySelectorAll('[data-bio-text]');
     const buttons = document.querySelectorAll('[data-tab-button]');
+    const headerSection = document.querySelector('.header');
+    const headerHeight = headerSection.clientHeight;
+
+    window.addEventListener('scroll', function(){
+        window.scrollY > headerHeight? stickLogo(): hideLogo();
+    });
 
     for(let i = 0; i < dataBioSelectors.length; i++){
         dataBioSelectors[i].addEventListener('click', function(bioSelector){
             const openSelector = 'cast__container__tabs--is-open';
             const bioSelectorTabs = bioSelector.target.nextElementSibling;
-            console.log(bioSelector.target);
 
             if(bioSelectorTabs.classList.contains(openSelector)){
                 hideBioSelector();
@@ -24,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
                     aboutContainers[i].classList.add('cast__container__about--is-open');
 
-                    bioSelector.target.classList.add('cast__container__item__image--is-active')
+                    bioSelector.target.classList.add('cast__container__item__image--is-active');
                 }
             }
         })
@@ -41,12 +46,22 @@ document.addEventListener('DOMContentLoaded', function(){
 
             targetTabId.classList.add('cast__container__about__item--is-active');
             
-            button.target.classList.add('cast__container__tabs__button--is-active')
+            button.target.classList.add('cast__container__tabs__button--is-active');
         })
     }
-
-
 });
+
+function stickLogo(){
+    const logo = document.querySelector('.header__logo');
+
+    logo.classList.add('header__logo--is-sticky');
+};
+
+function hideLogo(){
+    const logo = document.querySelector('.header__logo');
+
+    logo.classList.remove('header__logo--is-sticky');
+};
 
 function deactivateImg(){
     const imageSelectors = document.querySelectorAll('[data-bio-image]');
@@ -63,17 +78,17 @@ function hideBioSelector(){
 function hideBioText(){
     const bioTextContainers = document.querySelectorAll('.cast__container__about');
 
-    bioTextContainers.forEach(container => container.classList.remove('cast__container__about--is-open'))
+    bioTextContainers.forEach(container => container.classList.remove('cast__container__about--is-open'));
 };
 
 function hideAllTabs(){
     const tabsContent = document.querySelectorAll('.cast__container__about__item');
 
-    tabsContent.forEach(tabContent => tabContent.classList.remove("cast__container__about__item--is-active" ))
+    tabsContent.forEach(tabContent => tabContent.classList.remove("cast__container__about__item--is-active" ));
 };
 
 function removeActiveBtn(){
     const buttons = document.querySelectorAll('.cast__container__tabs__button');
 
-    buttons.forEach(button => button.classList.remove('cast__container__tabs__button--is-active'))
+    buttons.forEach(button => button.classList.remove('cast__container__tabs__button--is-active'));
 }
