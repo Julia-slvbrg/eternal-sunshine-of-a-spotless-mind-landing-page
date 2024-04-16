@@ -1,3 +1,5 @@
+@use 'variables';
+
 .header{
     position: absolute;
     top: 0;
@@ -12,7 +14,7 @@
     
         &--is-sticky{
             position: fixed;
-            top: 85vh;
+            top: 80vh;
             left: 4vw;
         }
     }
