@@ -11,11 +11,15 @@
     &__logo{
         max-width: 85px;
         width: 100%;
+
+        @media(max-width: 768px){
+            display: none;
+        }
     
         &--is-sticky{
             position: fixed;
             top: 80vh;
-            left: 4vw;
+            left: 4vw; 
         }
     }
     
@@ -24,6 +28,10 @@
         justify-content: space-between;
         align-items: center;
         padding: 5px;
+
+        @media(max-width: 768px){
+            justify-content: center;
+        }
        
         &__links{
             list-style-type: none;

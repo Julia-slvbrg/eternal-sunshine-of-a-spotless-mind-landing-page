@@ -40,7 +40,12 @@ body{
 }
 
 .title--bg{
-    @include title(40px)
+    @include title(40px);
+
+    @media(max-width: 768px){
+        @include title(24px);
+    }
+    
 }
 
 .title{

@@ -1,11 +1,16 @@
 .hero{
-    background-image: url(../images/hero/hero_desktop1.png);
+    background-image: url(../images/hero/hero_desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 80vh;
-    padding: 4vw;
     position: relative;
+
+    @media(max-width: 768px){
+        background-image: url(../../dist/images/hero/hero_mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     &__overlay{
         position: absolute;
@@ -14,6 +19,11 @@
         height: 100%;
         width: 100%;
         background-color: rgba(0, 0, 0, .42);
+
+        
+        @media(max-width: 768px){
+            background-color: rgba(0, 0, 0, .55);
+        }
     }
 
     &__content{
@@ -27,8 +37,14 @@
         text-align: center;
         margin-top: 32px;
 
+        @media(max-width: 768px){
+            top: 95%;
+            left: 50%;
+            width: 320px;
+        }
+
         &__title{
-            margin-bottom: 56px;
+            margin-bottom: 56px;    
         }
 
         &__quotes{
@@ -39,6 +55,10 @@
                 font-style: italic;
                 font-weight: bold;
                 letter-spacing: 1px;
+            }
+
+            @media(max-width: 768px){
+                display: none;
             }
         }
     }
