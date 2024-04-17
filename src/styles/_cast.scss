@@ -8,11 +8,25 @@
     text-align: center;
 
     &__container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        row-gap: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+
+
+        @media(max-width: 768px){
+        }
 
         &__item{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            
+            @media(max-width: 768px){
+                flex-direction: column;
+                align-items: center;
+            }
+
             &__image{
                 width: 250px;
                 height: 290px;
@@ -20,7 +34,7 @@
                 cursor: pointer;
 
                 &--is-active{
-                    box-shadow: 1px 1px 35px 1px #bbb9c5;
+                    box-shadow: 1px 1px 35px .5px #bbb9c5;
                     -webkit-filter: brightness(1.1);
                 }
                 
@@ -28,26 +42,35 @@
                     -webkit-filter: brightness(1.1);
                 }                
             }
+
+            &__box{
+                display: flex;
+                flex-direction: column;                
+            }
         }
 
         &__tabs{
             display: none;
-           margin-top: 3PX;
+            margin-bottom: 16px;
 
             &__button{
                 background-color: transparent;
                 border: none;
                 border-bottom: 1px solid transparent;
                 cursor: pointer;
-                
+
                 &--is-active{
                     border-bottom: 2px solid variables.$ternaryTextColor;
                 }
             }
 
+            &__button:nth-child(1){
+                margin-right: 32px;
+            }
+
             &--is-open{
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
             }
         }
 
@@ -61,13 +84,10 @@
                     display: block;
                 }
             }
+            
             &--is-open{
                 display: block;
             }
-        }
-
-        .first-row, .second-row{
-            grid-column: span 3;
         }
     }
 }

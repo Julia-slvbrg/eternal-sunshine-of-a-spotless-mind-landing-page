@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', function(){
     for(let i = 0; i < dataBioSelectors.length; i++){
         dataBioSelectors[i].addEventListener('click', function(bioSelector){
             const openSelector = 'cast__container__tabs--is-open';
-            const bioSelectorTabs = bioSelector.target.nextElementSibling;
+            const bioSelectorTabs = bioSelector.target.nextElementSibling.childNodes[1];
+
+            console.log(bioSelectorTabs);
 
             if(bioSelectorTabs.classList.contains(openSelector)){
                 hideBioSelector();
